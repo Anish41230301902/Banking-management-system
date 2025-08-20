@@ -46,3 +46,43 @@ A comprehensive web-based Banking Management System developed using PHP and MySQ
 ---
 
 ## 📁 Project Structure
+
+---
+
+## 🗃️ Database Schema
+The system uses 8 main tables:
+- **Customers** - Customer personal information and details
+- **Accounts** - Bank account information and balances
+- **Transactions** - Financial transaction records
+- **Employees** - Bank staff management
+- **Loans** - Loan products and management
+- **LoanPayments** - Loan repayment tracking
+- **Cards** - Debit/Credit card management
+- **Branches** - Bank branch information
+
+---
+
+## 🚀 Installation Guide
+
+### Prerequisites
+- XAMPP/WAMP Server
+- PHP 7.4+
+- MySQL 5.7+
+- Web Browser
+
+### Installation Steps
+1. **Start Services**
+   - Start Apache and MySQL in XAMPP/WAMP
+
+2. **Set up the database**
+   - Open phpMyAdmin (`http://localhost/phpmyadmin`)
+   - Create a new database named `BankingManagementSystem`
+   - Import the `asr.sql` file to create tables and sample data
+
+3. **Configure database connection**
+   - Edit `config.php` with your database credentials:
+   ```php
+   $servername = "localhost";
+   $username = "root";
+   $password = "";
+   $dbname = "BankingManagementSystem";
